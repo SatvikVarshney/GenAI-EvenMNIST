@@ -19,7 +19,7 @@ The graph above illustrates the VAE's training loss over epochs. The model start
 
 ### Sample outputs of generated images 
 
-## Generated Images Samples
+#### These Images are generated based on hand written characters as stored in the MNIST number dataset
 
 | 0 | 2 | 4 | 6 | 8 |
 |---|---|---|---|---|
