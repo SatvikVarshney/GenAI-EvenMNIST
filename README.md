@@ -10,7 +10,7 @@ The GenAI-EvenMNIST project uses a Variational Auto-Encoder (VAE) with convoluti
 - **Performance Visualization**: Includes loss metrics visualization to assess the model's training progress and convergence.
 - **Verbose Mode**: Offers iterative reports on the model's learning progress, enhancing transparency and understanding of the training process.
 
-##Results
+## Results
 
 ### Sample outputs of generated images 
 
