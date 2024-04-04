@@ -1,0 +1,8 @@
+{
+	"learning rate": 0.001,
+	"num iter": 5,
+	"batch_size" : 128,
+	"latent_dim": 64,
+	"verbose_mode" : 1,
+	"img_dim": 14
+}
