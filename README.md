@@ -14,7 +14,7 @@ The GenAI-EvenMNIST project uses a Variational Auto-Encoder (VAE) with convoluti
 
 ### Sample outputs of generated images 
 
-#### These Images are generated based on hand written characters as stored in the MNIST number dataset
+#### These Images are generated based on hand written characters as stored in the MNIST database
 
 | 0 | 2 | 4 | 6 | 8 |
 |---|---|---|---|---|
