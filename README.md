@@ -84,7 +84,7 @@ Example `param.json`:
 ### Installation
 Clone the repository to get started:
 ```bash
-git clone https://github.com/yourusername/GenAI-EvenMNIST.git
+git clone https://github.com/SatvikVarshney/GenAI-EvenMNIST.git
 ```
 
 Navigate to the project directory:
