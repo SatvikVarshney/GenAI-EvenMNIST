@@ -27,15 +27,14 @@ class EnhancedVAE(nn.Module):
         # Encoder layers
         self.encoder_conv1 = nn.Conv2d(input_channels, feature_dims, kernel_size=4, stride=2, padding=1)
         self.encoder_conv2 = nn.Conv2d(feature_dims, feature_dims * 2, kernel_size=4, stride=2, padding=1)
-        # Adjusted dimensions based on convolutional output size
-        self.flat_features = 4 * 4 * feature_dims * 2 
-        self.encoder_fc1 = nn.Linear(self.flat_features, image_size)
-        self.encoder_fc2 = nn.Linear(self.flat_features, image_size)
+        self.encoder_fc1 = nn.Linear(feature_dims * 18, image_size)
+        self.encoder_fc2 = nn.Linear(feature_dims * 18, image_size)
 
         # Decoder layers
-        self.decoder_fc = nn.Linear(image_size, self.flat_features)
+        self.decoder_fc = nn.Linear(image_size, feature_dims * 18)
         self.decoder_deconv1 = nn.ConvTranspose2d(feature_dims * 2, feature_dims, kernel_size=5, stride=2, padding=1)
         self.decoder_deconv2 = nn.ConvTranspose2d(feature_dims, input_channels,  kernel_size=4, stride=2, padding=1)
+
 
 
     def encode(self, input_tensor):
