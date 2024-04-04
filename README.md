@@ -96,3 +96,58 @@ Install the required Python packages:
 ```bash
 pip install -r requirements.txt
 ```
+
+#### Command line syntax to run main.py
+```
+python main.py -o results -n 100
+OR
+python main.py --help
+```
+
+#### Command line parameters description
+```
+Parameter 1 = -o results
+Parameter 1 description = Folder path to store the regerenated images and loss plot
+Parameter 1 default value = results
+Parameter 1 type = string
+
+Parameter 2 = -n 100
+Parameter 2 description = Count of the regenerated output files
+Parameter 2 default value = 100
+Parameter 3 type = interger
+
+```
+
+#### Verbose mode output sample
+```
+Verbose mode = 0/OFF
+Executing in Verbose Mode = 0
+Processing Epoch 1/30....
+Processing Epoch 2/30....
+Processing Epoch 3/30....
+...
+...
+...
+Processing Epoch 29/30....
+Processing Epoch 30/30....
+Processing Sample regenerated images ....
+********* Processing Completed *********
+
+Verbose mode = 1/ON
+Executing in Verbose Mode = 1
+Processing Epoch 1/30....
+Epoch 1 Training Loss = : 56.5530
+Processing Epoch 2/30....
+Epoch 2 Training Loss = : 43.8068
+Processing Epoch 3/30....
+Epoch 3 Training Loss = : 42.2278
+...
+...
+...
+Epoch 29 Training Loss = : 38.5104
+Processing Epoch 30/30....
+Epoch 30 Training Loss = : 38.4338
+Processing Sample regenerated images ....
+********* Processing Completed *********
+
+```
